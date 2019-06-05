@@ -1,0 +1,30 @@
+{
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true,
+    browser: false
+  },
+  "root": true,
+  "rules": {
+    "comma-dangle": ["error", {
+        "functions": "never"
+    }],
+    "no-underscore-dangle": ["error", {
+        "allow": ["_id"]
+    }],
+    "no-plusplus": ["error", {
+      "allowForLoopAfterthoughts": true
+    }],
+    "indent": ["error", 2],
+    "arrow-body-style": 0,
+    "max-len": 0
+  },
+  "settings": {
+      "import/resolver": {
+          "webpack": {
+            "config": 'webpack/webpack.config.js'
+          }
+      }
+   }
+}
