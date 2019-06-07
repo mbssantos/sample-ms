@@ -1,0 +1,39 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Sample API",
+        "description": "A sample API OpenAPI Specification"
+    },
+    "schemes": [
+        "http"
+    ],
+    "host": "simple.api",
+    "basePath": "/",
+    "paths": {
+        "/getPayment": {
+            "post": {
+                "summary": "Getting payment informartion of a person",
+                "description": "Returns payment informartion of a person.",
+                "responses": {
+                    "200": {
+                        "description": "Payment amount",
+                        "schema": {
+                            "type": "json",
+                            "items": {
+                                "properties": {
+                                    "username": {
+                                        "type": "string"
+                                    },
+                                    "payment": {
+                                        "type": "number"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
